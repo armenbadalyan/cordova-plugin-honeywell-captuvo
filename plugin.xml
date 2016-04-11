@@ -26,7 +26,7 @@
         <header-file src="src/ios/CaptuvoCDV.h" />
         <source-file src="src/ios/CaptuvoCDV.m" />
         
-        <source-file src="src/ios/libCaptuvoSDK_Emulator.a" framework="true" compiler-flags="-fno-objc-arc"/>
+        <source-file src="src/ios/libCaptuvoSDK.a" framework="true" compiler-flags="-fno-objc-arc"/>
         
         <framework src="ExternalAccessory.framework" />
         
