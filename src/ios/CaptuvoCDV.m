@@ -76,12 +76,30 @@
     ProtocolConnectionStatus status =[self.device startDecoderHardware];
     [self logConnectionStatus:status];
     
+    
+    CDVPluginResult *result = [CDVPluginResult
+                               resultWithStatus:CDVCommandStatus_OK];
+    
+    [result setKeepCallback:[NSNumber numberWithBool:YES]];
+    
+    [self.commandDelegate sendPluginResult:result callbackId:command.callbackId];
+    
 }
 
 - (void)unregisterScanner:(CDVInvokedUrlCommand *)command {
     self.scannerCallbackId = nil;
     self.isMonitoringScanner = false;
     [self.device stopDecoderHardware];
+    
+    
+    CDVPluginResult *result = [CDVPluginResult
+                               resultWithStatus:CDVCommandStatus_OK];
+    
+    [result setKeepCallback:[NSNumber numberWithBool:NO]];
+    
+    [self.commandDelegate sendPluginResult:result callbackId:self.scannerCallbackId];
+    
+    
 }
 
 - (void)startScanning:(CDVInvokedUrlCommand *)command {
@@ -185,7 +203,7 @@
         case ProtocolConnectionStatusUnableToConnect:
             NSLog(@"Error connecting!");
             break;
-        case ProtocolConnectionStatusUnableToConnectIncompatiableSledFirmware:
+        case ProtocolConnectionStatusUnableToConnectIncompatibleSledFirmware:
             NSLog(@"Incompatible firmware!");
             break;
         default:
