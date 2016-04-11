@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-    id="com.ids.honeywell.captuvo"
+    id="com.ids.honeywell.captuvo-2"
     version="0.1">
     <name>CaptuvoCDV</name>
     <description>Honeywell Captuvo Cordova plugin, modified for IDS, visit GitHub to see source repo</description>
