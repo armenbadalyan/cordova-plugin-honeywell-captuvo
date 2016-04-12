@@ -60,6 +60,9 @@
                                resultWithStatus:CDVCommandStatus_OK
                                messageAsString:data];
     
+    
+    [result setKeepCallback:[NSNumber numberWithBool:YES]];
+    
     [self.commandDelegate sendPluginResult:result callbackId:self.scannerCallbackId];
 }
 
@@ -75,15 +78,6 @@
     [self.device enableDecoderPowerUpBeep:beepOnStartup];
     ProtocolConnectionStatus status =[self.device startDecoderHardware];
     [self logConnectionStatus:status];
-    
-    
-    CDVPluginResult *result = [CDVPluginResult
-                               resultWithStatus:CDVCommandStatus_OK];
-    
-    [result setKeepCallback:[NSNumber numberWithBool:YES]];
-    
-    [self.commandDelegate sendPluginResult:result callbackId:command.callbackId];
-    
 }
 
 - (void)unregisterScanner:(CDVInvokedUrlCommand *)command {
