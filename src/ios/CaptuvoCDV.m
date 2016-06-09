@@ -61,7 +61,7 @@
                                messageAsString:data];
     
     
-    [result setKeepCallback:[NSNumber numberWithBool:YES]];
+    [result setKeepCallback:[NSNumber numberWithBool:NO]];
     
     [self.commandDelegate sendPluginResult:result callbackId:self.scannerCallbackId];
 }
@@ -123,7 +123,7 @@
     BOOL triggerClick = [[command argumentAtIndex:2] boolValue];
     
     [self.device enableDecoderPowerUpBeep:startupBeep];
-    [self.device enableDecoderBeeperForGoodRead:successBeep persistSetting:true];
+    [self.device enableDecoderBeeperForGoodRead:false persistSetting:true];
     [self.device enableDecoderTriggerClick:triggerClick persistSetting:true];
 }
 
