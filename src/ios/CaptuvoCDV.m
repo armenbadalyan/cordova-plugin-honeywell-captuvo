@@ -81,7 +81,7 @@
 }
 
 - (void)unregisterScanner:(CDVInvokedUrlCommand *)command {
-    self.scannerCallbackId = nil;
+    
     self.isMonitoringScanner = false;
     [self.device stopDecoderHardware];
     
@@ -92,6 +92,8 @@
     [result setKeepCallback:[NSNumber numberWithBool:NO]];
     
     [self.commandDelegate sendPluginResult:result callbackId:self.scannerCallbackId];
+    
+    self.scannerCallbackId = nil;
     
     
 }
