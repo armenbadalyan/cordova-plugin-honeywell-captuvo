@@ -1,16 +1,16 @@
 {
   "name": "cordova-plugin-honeywell-captuvo-2",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Honeywell Captuvo Cordova plugin, modified for IDS, visit GitHub to see source repo",
   "cordova": {
-    "id": "com.ids.honeywell.captuvo",
+    "id": "cordova-plugin-honeywell-captuvo-2",
     "platforms": [
       "ios"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dgutie02/cordova-plugin-honeywell-captuvo.git"
+    "url": "https://github.com/kesali/cordova-plugin-honeywell-captuvo.git"
   },
   "keywords": [
     "captuvo",
@@ -23,7 +23,7 @@
   "author": "IDS",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dgutie02/cordova-plugin-honeywell-captuvo/issues"
+    "url": "https://github.com/kesali/cordova-plugin-honeywell-captuvo/issues"
   },
-  "homepage": "https://github.com/dgutie02/cordova-plugin-honeywell-captuvo#readme"
+  "homepage": "https://github.com/kesali/cordova-plugin-honeywell-captuvo#readme"
 }
