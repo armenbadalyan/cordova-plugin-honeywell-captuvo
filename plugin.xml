@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-    id="cordova-plugin-honeywell-captuvo-2"
+    id="cordova-plugin-captuvo-honeywell"
     version="0.0.2">
     <name>CaptuvoCDV</name>
     <description>Honeywell Captuvo Cordova plugin, modified for IDS, visit GitHub to see source repo</description>
     <license>MIT</license>
     <keywords>captuvo,magstripe,msr,barcode</keywords>
-    <repo>https://github.com/kesali/cordova-plugin-honeywell-captuvo.git</repo>
+    <repo>https://github.com/armenbadalyan/cordova-plugin-honeywell-captuvo.git</repo>
     <issue></issue>
     
     <js-module src="www/CaptuvoCDV.js" name="CaptuvoCDV">
